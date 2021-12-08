@@ -15,8 +15,8 @@ import jakarta.servlet.annotation.WebServlet;
         description = "Login Servlet Testing",
         urlPatterns = {"/LoginServlet"},
         initParams = {
-                @WebInitParam(name="user", value="Atif"),
-                @WebInitParam(name="password",value = "Mohammed@22")
+                @WebInitParam(name="user", value="Brijesh"),
+                @WebInitParam(name="password",value = "Brijesh@534")
         }
 )
 public class LoginServlet extends HttpServlet {
