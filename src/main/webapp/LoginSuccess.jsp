@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<h3> hi <%= request.getAttribute("user")%>>, Login is successful.</h3>
+<a href="Login.html">Login Page</a>
 </body>
 </html>

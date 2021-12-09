@@ -21,9 +21,13 @@ public class LoginServlet extends HttpServlet {
 	private static final String NAME_PATTERN="^[A-Z][a-z]{2,}$";
 	private static final String PASSWORD_PATERN="^(?=.*[0-9])(?=.*[A-Z])(?=.{8,}$)[0-9a-zA-Z]*[@#$%][0-9a-zA-Z]*$";
 	
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String user = request.getParameter("user");
         String pwd = request.getParameter("pwd");
+        
+//        String userID = getServletConfig().getInitParameter("user");
+//        String password = getServletConfig().getInitParameter("password");
         
         Pattern namePattern = Pattern.compile(NAME_PATTERN);
 		Pattern passwordPattern = Pattern.compile(PASSWORD_PATERN);
