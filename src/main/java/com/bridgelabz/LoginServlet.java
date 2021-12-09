@@ -38,6 +38,6 @@ public class LoginServlet extends HttpServlet {
 			PrintWriter out = response.getWriter();
 			out.println("<font color=red>Either user name or password is wrong.</font>");
 			rd.include(request, response);
-        }
+		}
 	}
 }
